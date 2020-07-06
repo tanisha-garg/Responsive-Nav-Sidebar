@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.contact-btn{
+    border: 1px solid black;
+    
+}
+.hr{
+    border: .1px solid white;
+}
+#wrapper {
+    overflow-x: hidden;
+ }
+ #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -20rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+  
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 20rem;
+    
+  }
+  #sidebar-wrapper .list-group .list-group-item{
+      color: white;
+  }
+  
+#content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -20rem;
+    }
+  }
+  @media (max-width : 1024px){
+    .desktop-nav{
+      display: none;
+    }
+  }
+  
+
+  .badge-product{
+      border-radius: 100%;
+  }
+  #close-btn{
+      font-weight: 100;
+      font-size: 15px;
+      float: right;
+  }

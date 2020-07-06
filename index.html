@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Project</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <div class="d-flex" id="wrapper">
+
+      <div class="border-right bg-dark" id="sidebar-wrapper">
+        <ul class="list-group list-group-flush">
+          <li
+            class="btn btn-lg list-group-item list-group-item-action text-light bg-dark sidebar-close-button"
+          >
+            <span id="close-btn">CLOSE <i class="fa fa-chevron-left"></i></span>
+          </li>
+          <div class="hr"></div>
+          <li href="#" class="list-group-item bg-dark">
+            About Us
+          </li>
+          <div class="hr"></div>
+          <li href="#" class="list-group-item bg-dark">
+            Services
+          </li>
+          <div class="hr"></div>
+          <li href="#" class="list-group-item bg-dark justify-content-between">
+            Blogs
+          </li>
+          <div class="hr"></div>
+          <li href="#" class="list-group-item bg-dark">
+            Products
+            <span
+              class="badge badge-default float-right badge-light badge-product"
+              >8</span
+            >
+          </li>
+          <div class="hr"></div>
+          <li href="#" class="list-group-item bg-dark">
+            Contact
+          </li>
+          <div class="hr"></div>
+          <li href="#" class="list-group-item bg-dark">
+            Status
+          </li>
+          <div class="hr"></div>
+          <li href="#" class="list-group-item bg-dark content-p">
+            <p class="text-center">
+              Join Over 1Lac+ readers of our Newsletter and stay in the know
+            </p>
+            <img
+              class="mx-auto d-block"
+              src="Assets/Image 24.png"
+              height="50%"
+              width="50%"
+            /><br />
+            <div class="text-center">
+              <a href="#" class="text-light">
+                Send me this copy &nbsp;
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="btn" id="sidebar-toggle">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">Logo</a>
+          <ul class="navbar-nav mr-auto desktop-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+          </ul>
+          <span class="navbar-text"
+            ><button class="btn contact-btn">CONTACT</button></span
+          >
+        </nav>
+      </div>
+
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#sidebar-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+      $("#close-btn").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+</html>
